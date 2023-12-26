@@ -12,13 +12,13 @@
 
             <div class="row">
                 <div class="col-md-3 text-muted">Title:</div>
-                <div class="col-md-9">{{ $task->title }}</div>
+                <div class="col-md-9" style="color: black;">{{ $task->title }}</div>
 
                 <div class="col-md-3 text-muted">Description:</div>
-                <div class="col-md-9">{{ $task->description }}</div>
+                <div class="col-md-9" style="color: black;">{{ $task->description }}</div>
 
                 <div class="col-md-3 text-muted">Due Date:</div>
-                <div class="col-md-9">{{ $task->due_date }}</div>
+                <div class="col-md-9" style="color: black;">{{ $task->due_date }}</div>
             </div>
         </div>
     </div>
