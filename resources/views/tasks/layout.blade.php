@@ -13,7 +13,12 @@
         body {
             background-color: #f8f9fa;
             font-family: 'Arial', sans-serif;
+            min-height: 100vh; /* This ensures that the content takes at least the full height of the viewport */
+            position: relative;
+            margin: 0;
+            padding: 0;
         }
+       
         .container {
             background: linear-gradient(to right, #f5f4f5, #dddcde);
             color: #ffffff; 
@@ -42,6 +47,13 @@
         .table-hover tbody tr:hover {
             background-color: #f8f9fa;
         }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
     </style>
 </head>
 <body style="background-color: #f0f0f0;">
@@ -56,17 +68,13 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
+                        
                        
                     </ul>
                 </div>
             </nav>
         </header>
+        
     <div class="container">
     
         @yield('content')
@@ -82,6 +90,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
 
     <script>
         function confirmDelete() {

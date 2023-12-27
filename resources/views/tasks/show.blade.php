@@ -8,7 +8,7 @@
             <h2 class="card-title text-center mb-0">Task Details</h2>
         </div>
         <div class="card-body">
-            <a href="{{ route('tasks.index') }}" class="btn btn-secondary mb-3"><i class="fas fa-arrow-left mr-2"></i> Back to Task List</a>
+            <a href="{{ route('tasks.index') }}" class="btn btn-secondary mb-3" ><i class="fas fa-arrow-left mr-2"></i> Back to Task List</a>
 
             <div class="row">
                 <div class="col-md-3 text-muted">Title:</div>
